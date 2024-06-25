@@ -1,0 +1,19 @@
+<body>
+    <div class="form-container">
+        <p class="title">Reset Password</p>
+        <form class="form">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" placeholder="" [(ngModel)]="username">
+            </div>
+           
+            <button class="sign" (click)="resetPassword()">Reset password</button>
+        </form>
+      
+        
+        <p class="signup">Go back
+            <a rel="noopener noreferrer" routerLink="/login" class="">Login</a>
+        </p>
+    </div>
+    <p>{{message}}</p>
+</body>
